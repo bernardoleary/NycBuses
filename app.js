@@ -32,16 +32,20 @@ bot.dialog('/', function (session) {
     if (session.message.text.length = 6 && !isNaN(session.message.text)) {        
         var mtaUrl = process.env.MTA_API + 'stop/MTA_' + session.message.text + '.json?key=' + process.env.MTA_KEY;
         request(mtaUrl, function (error, response, body) {
+            // Make sure we have a vlid response
             if (!error && response.statusCode == 200) {
                 var busInfo = JSON.parse(body);
-                var cards = getCardsAttachments(session, busInfo);
-                var reply = new builder.Message(session)
-                    .attachmentLayout(builder.AttachmentLayout.carousel)
-                    .attachments(cards);
-                session.send('Buses that stop at ' + busInfo.data.name + '...');
-                session.send(reply);
-            } else {
-                session.send('No bus stop for that number sorry :/'); 
+                // Check that the bus stop asked for exists
+                if (busInfo.data.code == 200) {                
+                    var cards = getCardsAttachments(session, busInfo);
+                    var reply = new builder.Message(session)
+                        .attachmentLayout(builder.AttachmentLayout.carousel)
+                        .attachments(cards);
+                    session.send('Buses that stop at ' + busInfo.data.name + '...');
+                    session.send(reply);
+                } else {
+                    session.send('No bus stop for that number sorry :/'); 
+                }
             }
         });
     } else {
@@ -49,7 +53,10 @@ bot.dialog('/', function (session) {
     }   
 });
 
-// Build the cards for the carousel
+//=========================================================
+// Build cards for the carousel
+//=========================================================
+
 function getCardsAttachments(session, busInfo) {
     var cardArray = [];
     var numberOfBuses = busInfo.data.routes.length;
