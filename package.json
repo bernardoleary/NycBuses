@@ -2,26 +2,12 @@
   "name": "nycbuses",
   "version": "1.0.0",
   "description": "This bot can tell you about buses in New York City.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bernardoleary/NycBuses.git"
-  },
-  "keywords": [
-    "NYC",
-    "Buses",
-    "DOT"
-  ],
-  "author": "Bernard O'Leary <bernard.oleary@gmail.com> (http://nycbus.es)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bernardoleary/NycBuses/issues"
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
   },
   "homepage": "https://github.com/bernardoleary/NycBuses#readme",
-  "logging-enabled": true,
   "dependencies": {
     "botbuilder": "^3.4.4",
     "dotenv": "^2.0.0",
