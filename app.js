@@ -36,7 +36,7 @@ bot.dialog('/', function (session) {
             if (!error && response.statusCode == 200) {
                 var busInfo = JSON.parse(body);
                 // Check that the bus stop asked for exists
-                if (busInfo.data.code == 200) {                
+                if (busInfo.code == 200) {                
                     var cards = getCardsAttachments(session, busInfo);
                     var reply = new builder.Message(session)
                         .attachmentLayout(builder.AttachmentLayout.carousel)
