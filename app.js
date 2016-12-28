@@ -38,12 +38,14 @@ bot.dialog('/', function (session) {
                 var reply = new builder.Message(session)
                     .attachmentLayout(builder.AttachmentLayout.carousel)
                     .attachments(cards);
-                session.send('Buses that stop at ' + busInfo.data.name);
+                session.send('Buses that stop at ' + busInfo.data.name + '...');
                 session.send(reply);
+            } else {
+                session.send('No bus stop for that number sorry :/'); 
             }
         });
     } else {
-        session.send("Please enter a 6 digit bus stop.");
+        session.send('Please enter a 6 digit bus stop number.');
     }   
 });
 
