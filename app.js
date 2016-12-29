@@ -4,8 +4,8 @@ require('dotenv').load();
 var restify = require('restify');
 var builder = require('botbuilder');
 var request = require('request');
-var locationDialog = require('./node_modules_customised/botbuilder-location');
-//var locationDialog = require('botbuilder-location');
+//var locationDialog = require('./node_modules_customised/botbuilder-location');
+var locationDialog = require('botbuilder-location');
 
 //=========================================================
 // Bot Setup
