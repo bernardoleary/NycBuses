@@ -1,3 +1,497 @@
 http://bustime.mta.info/api/where/stops-for-location.json?lat=40.748433&lon=-73.985656&latSpan=0.0005&lonSpan=0.005&key=YOUR_KEY
 
-{"code":200,"currentTime":1482949410372,"data":{"limitExceeded":false,"stops":[{"code":"401822","direction":"SE","id":"MTA_401822","lat":40.748188,"locationType":0,"lon":-73.984184,"name":"E 34 ST/5 AV","routes":[{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Pennsylvania Av / Woodhaven Blvd","id":"MTABC_BM5","longName":"Spring Creek - Midtown","shortName":"BM5","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/bm005cur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"006CB7","description":"Select Bus Service via 34th St Crosstown","id":"MTA NYCT_M34A+","longName":"Waterside - Port Authority Terminal","shortName":"M34A-SBS","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/manh/m034scur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"006CB7","description":"Select Bus Service via 34th St Crosstown","id":"MTA NYCT_M34+","longName":"East Side - Javits Center","shortName":"M34-SBS","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/manh/m034scur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"via Richmond Av / Arden Av / Huguenot Av","id":"MTA NYCT_X17J","longName":"Staten Island - Midtown Manhattan Express","shortName":"X17J","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/xpress/x017cur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"via Bloomingdale Rd / Amboy Rd","id":"MTA NYCT_X22","longName":"Staten Island - Manhattan Express","shortName":"X22","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/xpress/x022cur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"via Outerbridge Park & Ride / West Shore Pkwy","id":"MTA NYCT_X22A","longName":"Staten Island - Manhattan Express","shortName":"X22A","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/xpress/x022cur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"via Travis Av / Forest Hill Rd","id":"MTA NYCT_X31","longName":"Staten Island - Manhattan Express","shortName":"X31","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/xpress/x031cur.pdf"}],"wheelchairBoarding":"UNKNOWN"},{"code":"401844","direction":"NW","id":"MTA_401844","lat":40.748672,"locationType":0,"lon":-73.984909,"name":"W 34 ST/5 AV","routes":[{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"006CB7","description":"Select Bus Service via 34th St Crosstown","id":"MTA NYCT_M34A+","longName":"Waterside - Port Authority Terminal","shortName":"M34A-SBS","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/manh/m034scur.pdf"},{"agency":{"disclaimer":"","id":"MTA NYCT","lang":"en","name":"MTA New York City Transit","phone":"718-330-1234","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"006CB7","description":"Select Bus Service via 34th St Crosstown","id":"MTA NYCT_M34+","longName":"East Side - Javits Center","shortName":"M34-SBS","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/nyct/bus/schedule/manh/m034scur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via 188Th St / Union Turnpike","id":"MTABC_QM1","longName":"Fresh Meadows - Midtown Via 6 Av","shortName":"QM1","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm001cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Cross Island Pkwy / Whitestone Expwy","id":"MTABC_QM2","longName":"Bay Terrace - Midtown Via 6 Av","shortName":"QM2","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm002cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Northern Blvd","id":"MTABC_QM3","longName":"Little Neck - Midtown","shortName":"QM3","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm003cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"","id":"MTABC_QM4","longName":"Electchester - Midtown Via 6Th Ave","shortName":"QM4","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm004cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Horace Harding Exp/73 Ave/Union Tpk","id":"MTABC_QM5","longName":"Glen Oaks - Midtown Via 6 Av","shortName":"QM5","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm001cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via North Shore Towers / Union Turnpike","id":"MTABC_QM6","longName":"Lake Success - Midtown Via 6 Av","shortName":"QM6","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm001cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via 63Rd Rd / 57Th Av","id":"MTABC_QM10","longName":"Lefrak City - Midtown Via 6 Av","shortName":"QM10","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm010cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"","id":"MTABC_QM12","longName":"Forest Hills - Midtown Via 6 Av","shortName":"QM12","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm012cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via 157Th Av / Woodhaven Blvd","id":"MTABC_QM15","longName":"Lindenwood - Midtown Express","shortName":"QM15","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm015cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Rockaway Beach Blvd / Cross Bay Blvd","id":"MTABC_QM16","longName":"Neponsit - Midtown Express","shortName":"QM16","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm16cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Beach Channel Dr / Rockaway Beach Blvd / Cross Bay Blvd","id":"MTABC_QM17","longName":"Far Rockaway - Midtown Express","shortName":"QM17","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm16cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Lefferts Blvd / Queens Blvd","id":"MTABC_QM18","longName":"South Ozone Park - Midtown Express","shortName":"QM18","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm18cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via 26 Ave / Utopia Pkwy / Willets Pt Bl","id":"MTABC_QM20","longName":"Bay Terrace - Midtown","shortName":"QM20","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm020cur.pdf"},{"agency":{"disclaimer":"","id":"MTABC","lang":"EN","name":"MTA Bus Company","phone":"","privateService":false,"timezone":"America/New_York","url":"http://www.mta.info"},"color":"00933C","description":"Via Myrtle Av / Fresh Pond Rd / Eliot Av","id":"MTABC_QM24","longName":"Glendale - Midtown Via 6 Av","shortName":"QM24","textColor":"FFFFFF","type":3,"url":"http://web.mta.info/busco/schedules/qm024cur.pdf"}],"wheelchairBoarding":"UNKNOWN"}]},"text":"OK","version":1}
+{
+  "code": 200,
+  "currentTime": 1482965219287,
+  "data": {
+    "limitExceeded": false,
+    "stops": [
+      {
+        "code": "400324",
+        "direction": "SW",
+        "id": "MTA_400324",
+        "lat": 40.747509,
+        "locationType": 0,
+        "lon": -73.985359,
+        "name": "5 AV/W 33 ST",
+        "routes": [
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Bway / Sedgwick Av / 5Th & Madison",
+            "id": "MTABC_BXM3",
+            "longName": "Yonkers - Midtown",
+            "shortName": "BxM3",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/bxm3cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "",
+            "id": "MTABC_BXM4",
+            "longName": "Woodlawn - Midtown",
+            "shortName": "BxM4",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/bxm4cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "EE352E",
+            "description": "via 5th Av / Madison Av",
+            "id": "MTA NYCT_M1",
+            "longName": "Harlem - East Village",
+            "shortName": "M1",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/nyct/bus/schedule/manh/m001cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "B933AD",
+            "description": "via 5th Av / Madison Av / AC Powell Blvd",
+            "id": "MTA NYCT_M2",
+            "longName": "Washington Heights - East Village",
+            "shortName": "M2",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/nyct/bus/schedule/manh/m002cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "B933AD",
+            "description": "via 5th Av / Madison Av / St Nicholas Blvd",
+            "id": "MTA NYCT_M3",
+            "longName": "Fort George - East Village",
+            "shortName": "M3",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/nyct/bus/schedule/manh/m003cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "EE352E",
+            "description": "via 5th Av / Av of Americas / Riverside Dr",
+            "id": "MTA NYCT_M5",
+            "longName": "George Washington Bridge - South Ferry",
+            "shortName": "M5",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/nyct/bus/schedule/manh/m005cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "via Hillside Av / Queens Bl",
+            "id": "MTA NYCT_X68",
+            "longName": "Floral Park - Midtown Manhattan Express",
+            "shortName": "X68",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://mta.info/nyct/bus/schedule/xpress/x068cur.pdf"
+          }
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+      },
+      {
+        "code": "401844",
+        "direction": "NW",
+        "id": "MTA_401844",
+        "lat": 40.748672,
+        "locationType": 0,
+        "lon": -73.984909,
+        "name": "W 34 ST/5 AV",
+        "routes": [
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "006CB7",
+            "description": "Select Bus Service via 34th St Crosstown",
+            "id": "MTA NYCT_M34A+",
+            "longName": "Waterside - Port Authority Terminal",
+            "shortName": "M34A-SBS",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/nyct/bus/schedule/manh/m034scur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTA NYCT",
+              "lang": "en",
+              "name": "MTA New York City Transit",
+              "phone": "718-330-1234",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "006CB7",
+            "description": "Select Bus Service via 34th St Crosstown",
+            "id": "MTA NYCT_M34+",
+            "longName": "East Side - Javits Center",
+            "shortName": "M34-SBS",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/nyct/bus/schedule/manh/m034scur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via 188Th St / Union Turnpike",
+            "id": "MTABC_QM1",
+            "longName": "Fresh Meadows - Midtown Via 6 Av",
+            "shortName": "QM1",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm001cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Cross Island Pkwy / Whitestone Expwy",
+            "id": "MTABC_QM2",
+            "longName": "Bay Terrace - Midtown Via 6 Av",
+            "shortName": "QM2",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm002cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Northern Blvd",
+            "id": "MTABC_QM3",
+            "longName": "Little Neck - Midtown",
+            "shortName": "QM3",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm003cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "",
+            "id": "MTABC_QM4",
+            "longName": "Electchester - Midtown Via 6Th Ave",
+            "shortName": "QM4",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm004cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Horace Harding Exp/73 Ave/Union Tpk",
+            "id": "MTABC_QM5",
+            "longName": "Glen Oaks - Midtown Via 6 Av",
+            "shortName": "QM5",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm001cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via North Shore Towers / Union Turnpike",
+            "id": "MTABC_QM6",
+            "longName": "Lake Success - Midtown Via 6 Av",
+            "shortName": "QM6",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm001cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via 63Rd Rd / 57Th Av",
+            "id": "MTABC_QM10",
+            "longName": "Lefrak City - Midtown Via 6 Av",
+            "shortName": "QM10",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm010cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "",
+            "id": "MTABC_QM12",
+            "longName": "Forest Hills - Midtown Via 6 Av",
+            "shortName": "QM12",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm012cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via 157Th Av / Woodhaven Blvd",
+            "id": "MTABC_QM15",
+            "longName": "Lindenwood - Midtown Express",
+            "shortName": "QM15",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm015cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Rockaway Beach Blvd / Cross Bay Blvd",
+            "id": "MTABC_QM16",
+            "longName": "Neponsit - Midtown Express",
+            "shortName": "QM16",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm16cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Beach Channel Dr / Rockaway Beach Blvd / Cross Bay Blvd",
+            "id": "MTABC_QM17",
+            "longName": "Far Rockaway - Midtown Express",
+            "shortName": "QM17",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm16cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Lefferts Blvd / Queens Blvd",
+            "id": "MTABC_QM18",
+            "longName": "South Ozone Park - Midtown Express",
+            "shortName": "QM18",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm18cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via 26 Ave / Utopia Pkwy / Willets Pt Bl",
+            "id": "MTABC_QM20",
+            "longName": "Bay Terrace - Midtown",
+            "shortName": "QM20",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm020cur.pdf"
+          },
+          {
+            "agency": {
+              "disclaimer": "",
+              "id": "MTABC",
+              "lang": "EN",
+              "name": "MTA Bus Company",
+              "phone": "",
+              "privateService": false,
+              "timezone": "America/New_York",
+              "url": "http://www.mta.info"
+            },
+            "color": "00933C",
+            "description": "Via Myrtle Av / Fresh Pond Rd / Eliot Av",
+            "id": "MTABC_QM24",
+            "longName": "Glendale - Midtown Via 6 Av",
+            "shortName": "QM24",
+            "textColor": "FFFFFF",
+            "type": 3,
+            "url": "http://web.mta.info/busco/schedules/qm024cur.pdf"
+          }
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+      }
+    ]
+  },
+  "text": "OK",
+  "version": 1
+}

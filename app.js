@@ -5,8 +5,10 @@ var restify = require('restify');
 var builder = require('botbuilder');
 var request = require('request');
 var locationDialog = require('./node_modules_customised/botbuilder-location');
-var spanGeoForSearch = '0.003';
+var spanGeoForSearch = '0.005';
 var boundingBoxForCard = 0.001;
+var maxNumberOfStops = 10;
+var currentPlace;
 //var locationDialog = require('botbuilder-location');
 
 //=========================================================
@@ -39,9 +41,11 @@ bot.dialog("/", [
     // Get location
     function (session) {
         var options = {
-            prompt: "Where you at boss? Try something like 'Park and 34th'.",
+            prompt: "Where are you at boss? Try something like 'Park and 34th'.",
             useNativeControl: true,
-            reverseGeocode: true
+            reverseGeocode: true,
+            requiredFields:
+                locationDialog.LocationRequiredFields.streetAddress
         };
         locationDialog.getLocation(session, options);
     },
@@ -49,26 +53,30 @@ bot.dialog("/", [
     function (session, results) {
         if (results.response) {
             // Get the location
-            var place = results.response;
+            currentPlace = results.response;
             // Make sure the bus number makes sense  
             var mtaUrl = 
                 process.env.MTA_API + 'stops-for-location.json'
-                + '?lat=' + place.geo.latitude 
-                + '&lon=' + place.geo.longitude 
+                + '?lat=' + currentPlace.geo.latitude 
+                + '&lon=' + currentPlace.geo.longitude 
                 + '&latSpan=' + spanGeoForSearch
                 + '&lonSpan=' + spanGeoForSearch
                 + '&key=' + process.env.MTA_API_KEY;
             request(mtaUrl, function (error, response, body) {
                 // Make sure we have a valid response
                 if (!error && response.statusCode == 200) {
-                    var busStopInfo = JSON.parse(body);
+                    var busStopInfo = JSON.parse(body);                    
                     // Check that the bus stop asked for exists
-                    if (busStopInfo.code == 200 && busStopInfo.data.stops > 0) {                
-                        var cards = getBusStopCardAttachments(session, busStopInfo);
+                    if (busStopInfo.code == 200 && busStopInfo.data.stops.length > 0) {   
+                        // Send only the first closest few stops
+                        var busStopInfoArray = busStopInfo.data.stops;
+                        busStopInfoArray.sort(compare);
+                        // Render the cards             
+                        var cards = getBusStopCardAttachments(session, busStopInfoArray);
                         var reply = new builder.Message(session)
                             .attachmentLayout(builder.AttachmentLayout.carousel)
                             .attachments(cards);
-                        session.send('OK boss, closest ' + busStopInfo.data.stops.length + ' bus stops are...');
+                        session.send('OK, closest ' + (maxNumberOfStops < busStopInfoArray.length ? maxNumberOfStops : busStopInfoArray.length) + ' bus stops are...');
                         session.send(reply);
                     } else {
                         session.send('No NYC bus stops near you sorry boss :/'); 
@@ -84,25 +92,25 @@ bot.dialog("/", [
 // TODO: can put a link on the bus button to say click to see when next one arrives
 //=========================================================
 
-function getBusStopCardAttachments(session, busStopInfo) {
+function getBusStopCardAttachments(session, busStopInfoArray, place) {
     var cardArray = [];
-    var numberOfBusStops = busStopInfo.data.stops.length;
+    var numberOfBusStops = busStopInfoArray.length;
     var counter = 0;
-    while (numberOfBusStops > counter) {
+    while (numberOfBusStops > counter && maxNumberOfStops > counter) {
         cardArray.push(
             new builder.HeroCard(session)
-                .subtitle((counter + 1) + '. ' + busStopInfo.data.stops[counter].name)
+                .subtitle((counter + 1) + '. ' + busStopInfoArray[counter].name)
                 .images([{
                     url: process.env.BING_MAPS_API
                         + '?mapArea=' 
-                            + (busStopInfo.data.stops[counter].lat - boundingBoxForCard) + ',' 
-                            + (busStopInfo.data.stops[counter].lon - boundingBoxForCard) + ',' 
-                            + (busStopInfo.data.stops[counter].lat + boundingBoxForCard) + ','
-                            + (busStopInfo.data.stops[counter].lon + boundingBoxForCard)
+                            + (busStopInfoArray[counter].lat - boundingBoxForCard) + ',' 
+                            + (busStopInfoArray[counter].lon - boundingBoxForCard) + ',' 
+                            + (busStopInfoArray[counter].lat + boundingBoxForCard) + ','
+                            + (busStopInfoArray[counter].lon + boundingBoxForCard)
                         + '&mapSize=500,280'
                         + '&pp=' 
-                            + busStopInfo.data.stops[counter].lat + ',' 
-                            + busStopInfo.data.stops[counter].lon 
+                            + busStopInfoArray[counter].lat + ',' 
+                            + busStopInfoArray[counter].lon 
                             + ';1;' 
                             + (counter + 1)
                         + '&dpi=1'
@@ -114,4 +122,25 @@ function getBusStopCardAttachments(session, busStopInfo) {
         counter++;
     }
     return cardArray;
+}
+
+//=========================================================
+// Compare function for geo-coordinates
+//=========================================================
+
+function compare(a, b) {
+    // Get distance from currentPlace for a
+    distanceXForA = a.lat - currentPlace.geo.latitude;
+    distanceYForA = a.lon - currentPlace.geo.longitude;
+    totalDistanceFromPlaceForA = Math.sqrt((distanceXForA * distanceXForA) + (distanceYForA * distanceYForA));
+    // Get distance from currentPlace for b
+    distanceXForB = b.lat - currentPlace.geo.latitude;
+    distanceYForB = b.lon - currentPlace.geo.longitude;
+    totalDistanceFromPlaceForB = Math.sqrt((distanceXForB * distanceXForB) + (distanceYForB * distanceYForB));
+    // Return the shortest distance
+    if (totalDistanceFromPlaceForA < totalDistanceFromPlaceForB)
+        return -1;
+    if (totalDistanceFromPlaceForA > totalDistanceFromPlaceForB)
+        return 1;
+    return 0;
 }
