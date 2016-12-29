@@ -43,9 +43,7 @@ bot.dialog("/", [
         var options = {
             prompt: "Where are you at boss? Try something like 'Park and 34th'.",
             useNativeControl: true,
-            reverseGeocode: true,
-            requiredFields:
-                locationDialog.LocationRequiredFields.streetAddress
+            reverseGeocode: true
         };
         locationDialog.getLocation(session, options);
     },
