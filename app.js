@@ -39,7 +39,7 @@ bot.dialog("/", [
     // Get location
     function (session) {
         var options = {
-            prompt: "Where you at boss? Try something like 'Park and 34th' or just send location",
+            prompt: "Where you at boss? Try something like 'Park and 34th'.",
             useNativeControl: true,
             reverseGeocode: true
         };
