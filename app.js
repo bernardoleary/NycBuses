@@ -74,8 +74,8 @@ bot.dialog("/", [
                         var reply = new builder.Message(session)
                             .attachmentLayout(builder.AttachmentLayout.carousel)
                             .attachments(cards);
-                        session.send('OK, closest ' + (maxNumberOfStops < busStopInfoArray.length ? maxNumberOfStops : busStopInfoArray.length) + ' bus stops are...');
                         session.send(reply);
+                        session.send('OK, that\'s your closest ' + (maxNumberOfStops < busStopInfoArray.length ? maxNumberOfStops : busStopInfoArray.length) + ' bus stops');
                     } else {
                         session.send('No NYC bus stops near you sorry boss :/'); 
                     }
