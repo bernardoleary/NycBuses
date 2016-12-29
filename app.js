@@ -7,7 +7,7 @@ var request = require('request');
 var locationDialog = require('./node_modules_customised/botbuilder-location');
 var spanGeoForSearch = '0.005';
 var boundingBoxForCard = 0.001;
-var maxNumberOfStops = 10;
+var maxNumberOfStops = 5;
 var currentPlace;
 //var locationDialog = require('botbuilder-location');
 
