@@ -5,6 +5,8 @@ var restify = require('restify');
 var builder = require('botbuilder');
 var request = require('request');
 var locationDialog = require('./node_modules_customised/botbuilder-location');
+var spanGeoForSearch = '0.003';
+var boundingBoxForCard = 0.001;
 //var locationDialog = require('botbuilder-location');
 
 //=========================================================
@@ -53,15 +55,15 @@ bot.dialog("/", [
                 process.env.MTA_API + 'stops-for-location.json'
                 + '?lat=' + place.geo.latitude 
                 + '&lon=' + place.geo.longitude 
-                + '&latSpan=0.002'
-                + '&lonSpan=0.002'
+                + '&latSpan=' + spanGeoForSearch
+                + '&lonSpan=' + spanGeoForSearch
                 + '&key=' + process.env.MTA_API_KEY;
             request(mtaUrl, function (error, response, body) {
                 // Make sure we have a valid response
                 if (!error && response.statusCode == 200) {
                     var busStopInfo = JSON.parse(body);
                     // Check that the bus stop asked for exists
-                    if (busStopInfo.code == 200 && busStopInfo.data.stops) {                
+                    if (busStopInfo.code == 200 && busStopInfo.data.stops > 0) {                
                         var cards = getBusStopCardAttachments(session, busStopInfo);
                         var reply = new builder.Message(session)
                             .attachmentLayout(builder.AttachmentLayout.carousel)
@@ -93,10 +95,10 @@ function getBusStopCardAttachments(session, busStopInfo) {
                 .images([{
                     url: process.env.BING_MAPS_API
                         + '?mapArea=' 
-                            + (busStopInfo.data.stops[counter].lat - 0.001) + ',' 
-                            + (busStopInfo.data.stops[counter].lon - 0.001) + ',' 
-                            + (busStopInfo.data.stops[counter].lat + 0.001) + ','
-                            + (busStopInfo.data.stops[counter].lon + 0.001)
+                            + (busStopInfo.data.stops[counter].lat - boundingBoxForCard) + ',' 
+                            + (busStopInfo.data.stops[counter].lon - boundingBoxForCard) + ',' 
+                            + (busStopInfo.data.stops[counter].lat + boundingBoxForCard) + ','
+                            + (busStopInfo.data.stops[counter].lon + boundingBoxForCard)
                         + '&mapSize=500,280'
                         + '&pp=' 
                             + busStopInfo.data.stops[counter].lat + ',' 
