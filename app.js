@@ -4,6 +4,8 @@ require('dotenv').load();
 var restify = require('restify');
 var builder = require('botbuilder');
 var request = require('request');
+var locationDialog = require('./node_modules_customised/botbuilder-location');
+//var locationDialog = require('botbuilder-location');
 
 //=========================================================
 // Bot Setup
@@ -27,49 +29,85 @@ server.post('/api/messages', connector.listen());
 // Bots Dialogs
 //=========================================================
 
-// Create the dialog
-bot.dialog('/', function (session) {
-    if (session.message.text.length = 6 && !isNaN(session.message.text)) {        
-        var mtaUrl = process.env.MTA_API + 'stop/MTA_' + session.message.text + '.json?key=' + process.env.MTA_KEY;
-        request(mtaUrl, function (error, response, body) {
-            // Make sure we have a vlid response
-            if (!error && response.statusCode == 200) {
-                var busInfo = JSON.parse(body);
-                // Check that the bus stop asked for exists
-                if (busInfo.code == 200) {                
-                    var cards = getCardsAttachments(session, busInfo);
-                    var reply = new builder.Message(session)
-                        .attachmentLayout(builder.AttachmentLayout.carousel)
-                        .attachments(cards);
-                    session.send('Buses that stop at ' + busInfo.data.name + '...');
-                    session.send(reply);
-                } else {
-                    session.send('No bus stop for that number sorry :/'); 
+// Set the maps API key
+bot.library(locationDialog.createLibrary(process.env.BING_MAPS_API_KEY));
+
+// Get the user's location
+bot.dialog("/", [
+    // Get location
+    function (session) {
+        var options = {
+            prompt: "Where you at boss? Try something like 'Park and 34th' or just send location",
+            useNativeControl: true,
+            reverseGeocode: true
+        };
+        locationDialog.getLocation(session, options);
+    },
+    // Get bus stops
+    function (session, results) {
+        if (results.response) {
+            // Get the location
+            var place = results.response;
+            // Make sure the bus number makes sense  
+            var mtaUrl = 
+                process.env.MTA_API + 'stops-for-location.json'
+                + '?lat=' + place.geo.latitude 
+                + '&lon=' + place.geo.longitude 
+                + '&latSpan=0.002'
+                + '&lonSpan=0.002'
+                + '&key=' + process.env.MTA_API_KEY;
+            request(mtaUrl, function (error, response, body) {
+                // Make sure we have a valid response
+                if (!error && response.statusCode == 200) {
+                    var busStopInfo = JSON.parse(body);
+                    // Check that the bus stop asked for exists
+                    if (busStopInfo.code == 200 && busStopInfo.data.stops) {                
+                        var cards = getBusStopCardAttachments(session, busStopInfo);
+                        var reply = new builder.Message(session)
+                            .attachmentLayout(builder.AttachmentLayout.carousel)
+                            .attachments(cards);
+                        session.send('OK boss, closest ' + busStopInfo.data.stops.length + ' bus stops are...');
+                        session.send(reply);
+                    } else {
+                        session.send('No NYC bus stops near you sorry boss :/'); 
+                    }
                 }
-            }
-        });
-    } else {
-        session.send('Please enter a 6 digit bus stop number.');
-    }   
-});
+            });
+        }  
+    }
+]);
 
 //=========================================================
 // Build cards for the carousel
+// TODO: can put a link on the bus button to say click to see when next one arrives
 //=========================================================
 
-function getCardsAttachments(session, busInfo) {
+function getBusStopCardAttachments(session, busStopInfo) {
     var cardArray = [];
-    var numberOfBuses = busInfo.data.routes.length;
+    var numberOfBusStops = busStopInfo.data.stops.length;
     var counter = 0;
-    while (numberOfBuses > counter) {
+    while (numberOfBusStops > counter) {
         cardArray.push(
-            new builder.ThumbnailCard(session)
-                .title(busInfo.data.routes[counter].shortName)
-                .subtitle(busInfo.data.routes[counter].longName)
-                .text(busInfo.data.routes[counter].description)
-                .buttons([
-                    builder.CardAction.openUrl(session, busInfo.data.routes[counter].url, 'Timetable')
-        ]));
+            new builder.HeroCard(session)
+                .subtitle((counter + 1) + '. ' + busStopInfo.data.stops[counter].name)
+                .images([{
+                    url: process.env.BING_MAPS_API
+                        + '?mapArea=' 
+                            + (busStopInfo.data.stops[counter].lat - 0.001) + ',' 
+                            + (busStopInfo.data.stops[counter].lon - 0.001) + ',' 
+                            + (busStopInfo.data.stops[counter].lat + 0.001) + ','
+                            + (busStopInfo.data.stops[counter].lon + 0.001)
+                        + '&mapSize=500,280'
+                        + '&pp=' 
+                            + busStopInfo.data.stops[counter].lat + ',' 
+                            + busStopInfo.data.stops[counter].lon 
+                            + ';1;' 
+                            + (counter + 1)
+                        + '&dpi=1'
+                        + '&logo=always'
+                        + '&form=BTCTRL'
+                        + '&key=' + process.env.BING_MAPS_API_KEY
+                }]));
         // Increment the counter
         counter++;
     }

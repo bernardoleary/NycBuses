@@ -253,7 +253,7 @@ paket-files/
 
 # Node
 /**/node_modules
-.env
+.env.secure
 
 # Visual Studio Code
 .vscode/
