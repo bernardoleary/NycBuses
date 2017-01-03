@@ -150,8 +150,8 @@ bot.dialog("/", [
                         if (typeof(arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime) == "undefined") {
                             session.send('No departures scheduled for a while sorry chief.');
                         }
-                        var expectedArrivalTime = new Date(arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
-                        session.send("Your next bus arrives at " + dateFormat(expectedArrivalTime, "h:MM TT"));
+                        var expectedArrivalTime = new Date((arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime).slice(0, -6));
+                        session.send("Your next bus arrives at " + dateFormat(expectedArrivalTime, "UTC:h:MM TT Z").slice(0, -4));
                     } else if (arrivalTimesArray[0].length == 0) {
                         session.send('No departures scheduled for a while sorry chief.');
                     }                                                            
