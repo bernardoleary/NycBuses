@@ -1,0 +1,963 @@
+http://bustime.mta.info/api/siri/stop-monitoring.json?MonitoringRef=403821&LineRef=MTA%20NYCT_M101&key=YOUR_KEY
+
+{
+  "Siri": {
+    "ServiceDelivery": {
+      "ResponseTimestamp": "2017-01-03T13:54:27.574-05:00",
+      "StopMonitoringDelivery": [
+        {
+          "MonitoredStopVisit": [
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-072900_M101_16"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.976466,
+                  "Latitude": 40.75087
+                },
+                "Bearing": 233.83948,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_22920_M101-47",
+                "VehicleRef": "MTA NYCT_5255",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T13:57:07.476-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T13:57:07.476-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "1 stop away",
+                      "DistanceFromCall": 591.14,
+                      "StopsFromCall": 1,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:53:59.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-080500_M101_71"
+                },
+                "JourneyPatternRef": "MTA_M1010347",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_402816",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.967285,
+                  "Latitude": 40.763464
+                },
+                "Bearing": 234.11914,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_48060_M101-71",
+                "VehicleRef": "MTA NYCT_5521",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:07:17.039-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:07:17.039-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "1.4 miles away",
+                      "DistanceFromCall": 2190.82,
+                      "StopsFromCall": 3,
+                      "CallDistanceAlongRoute": 5372.33
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:53:55.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-073800_M101_30"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.965189,
+                  "Latitude": 40.766334
+                },
+                "Bearing": 233.98895,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_18360_M101-21",
+                "VehicleRef": "MTA NYCT_5693",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:11:06.556-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:11:06.556-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "1.6 miles away",
+                      "DistanceFromCall": 2555.54,
+                      "StopsFromCall": 3,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:53:55.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-074600_M101_80"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.961126,
+                  "Latitude": 40.771903
+                },
+                "Bearing": 233.94585,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_17460_M101-15",
+                "VehicleRef": "MTA NYCT_5881",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:18:22.131-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:18:22.131-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "2.0 miles away",
+                      "DistanceFromCall": 3263,
+                      "StopsFromCall": 5,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:53:55.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-072100_M101_37"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.959349,
+                  "Latitude": 40.774337
+                },
+                "Bearing": 233.72398,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_19080_M101-24",
+                "VehicleRef": "MTA NYCT_5639",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:21:39.485-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:21:39.485-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "2.2 miles away",
+                      "DistanceFromCall": 3572.3,
+                      "StopsFromCall": 5,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:09.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-075500_M101_42"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.954368,
+                  "Latitude": 40.781164
+                },
+                "Bearing": 234.29893,
+                "ProgressRate": "normalProgress",
+                "VehicleRef": "MTA NYCT_5260",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:28:14.185-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:28:14.185-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "2.8 miles away",
+                      "DistanceFromCall": 4439.55,
+                      "StopsFromCall": 7,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:16.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-075500_M101_42"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.953564,
+                  "Latitude": 40.782266
+                },
+                "Bearing": 233.75014,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_19560_M101-28",
+                "VehicleRef": "MTA NYCT_5648",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:29:06.335-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:29:06.335-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "2.8 miles away",
+                      "DistanceFromCall": 4579.57,
+                      "StopsFromCall": 7,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:24.369-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-077200_M79_204"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.943429,
+                  "Latitude": 40.796149
+                },
+                "Bearing": 233.9417,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_16680_M101-12",
+                "VehicleRef": "MTA NYCT_5611",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T14:42:07.061-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T14:42:07.061-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "3.9 miles away",
+                      "DistanceFromCall": 6343.43,
+                      "StopsFromCall": 10,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:24.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-078800_M101_87"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.952718,
+                  "Latitude": 40.810818
+                },
+                "Bearing": 336.95743,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_29280_M101-74",
+                "VehicleRef": "MTA NYCT_5636",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:04:16.488-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:04:16.488-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "5.5 miles away",
+                      "DistanceFromCall": 8862.3,
+                      "StopsFromCall": 19,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:15.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-079600_M101_83"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.955871,
+                  "Latitude": 40.812916
+                },
+                "Bearing": 310.9684,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_20460_M101-33",
+                "VehicleRef": "MTA NYCT_5256",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:07:31.630-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:07:31.630-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "5.7 miles away",
+                      "DistanceFromCall": 9225.59,
+                      "StopsFromCall": 21,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:14.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-080400_M101_88"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.948727,
+                  "Latitude": 40.823697
+                },
+                "Bearing": 234.09412,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_43020_M101-88",
+                "VehicleRef": "MTA NYCT_5882",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:17:03.481-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:17:03.481-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "6.6 miles away",
+                      "DistanceFromCall": 10598.37,
+                      "StopsFromCall": 27,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:11.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-081200_M101_92"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.940387,
+                  "Latitude": 40.83512
+                },
+                "Bearing": 234.34993,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_1620_M101-4",
+                "VehicleRef": "MTA NYCT_5884",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:27:26.396-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:27:26.396-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "7.5 miles away",
+                      "DistanceFromCall": 12049.42,
+                      "StopsFromCall": 33,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:25.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-082800_M79_201"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.930746,
+                  "Latitude": 40.848309
+                },
+                "Bearing": 233.88066,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_37200_M79-201",
+                "VehicleRef": "MTA NYCT_1203",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:37:22.543-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:37:22.543-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "8.5 miles away",
+                      "DistanceFromCall": 13725.35,
+                      "StopsFromCall": 41,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:53:54.567-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-075500_M101_42"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.929211,
+                  "Latitude": 40.850506
+                },
+                "Bearing": 234.68617,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_19560_M101-28",
+                "VehicleRef": "MTA NYCT_5877",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:39:02.863-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:39:02.863-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "8.7 miles away",
+                      "DistanceFromCall": 14001.89,
+                      "StopsFromCall": 42,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:11.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-082000_M101_91"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.929044,
+                  "Latitude": 40.850732
+                },
+                "Bearing": 233.65254,
+                "ProgressRate": "normalProgress",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_43860_M101-91",
+                "VehicleRef": "MTA NYCT_5886",
+                "MonitoredCall": {
+                  "ExpectedArrivalTime": "2017-01-03T15:39:12.917-05:00",
+                  "ExpectedDepartureTime": "2017-01-03T15:39:12.917-05:00",
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "8.7 miles away",
+                      "DistanceFromCall": 14030.67,
+                      "StopsFromCall": 43,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:24.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-085200_M101_18"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T14:12:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.938893,
+                  "Latitude": 40.837157
+                },
+                "Bearing": 53.46289,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_29520_M101-14",
+                "VehicleRef": "MTA NYCT_5254",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "10.8 miles away",
+                      "DistanceFromCall": 17345.01,
+                      "StopsFromCall": 57,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:14.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-086800_M101_103"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T14:28:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.944006,
+                  "Latitude": 40.83016
+                },
+                "Bearing": 53.673176,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_17220_M101-14",
+                "VehicleRef": "MTA NYCT_5705",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "11.3 miles away",
+                      "DistanceFromCall": 18233.98,
+                      "StopsFromCall": 60,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:15.264-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-088300_M101_28"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T14:43:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.953188,
+                  "Latitude": 40.811018
+                },
+                "Bearing": 156.92308,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_40560_M101-34",
+                "VehicleRef": "MTA NYCT_5563",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "12.9 miles away",
+                      "DistanceFromCall": 20745.76,
+                      "StopsFromCall": 72,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:53:53.803-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-089000_M101_100"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T14:50:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.945492,
+                  "Latitude": 40.807775
+                },
+                "Bearing": 157.0679,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_22800_M101-46",
+                "VehicleRef": "MTA NYCT_5820",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "13.4 miles away",
+                      "DistanceFromCall": 21487.32,
+                      "StopsFromCall": 76,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:07.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-090500_M101_107"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T15:05:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.937255,
+                  "Latitude": 40.804305
+                },
+                "Bearing": 157.1355,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_48780_M101-107",
+                "VehicleRef": "MTA NYCT_5876",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "13.8 miles away",
+                      "DistanceFromCall": 22280.74,
+                      "StopsFromCall": 80,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:21.000-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-089800_M101_51"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T14:58:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.936838,
+                  "Latitude": 40.8023
+                },
+                "Bearing": 53.821266,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_23580_M101-49",
+                "VehicleRef": "MTA NYCT_5719",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "14.0 miles away",
+                      "DistanceFromCall": 22597.03,
+                      "StopsFromCall": 81,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:14.453-05:00"
+            },
+            {
+              "MonitoredVehicleJourney": {
+                "LineRef": "MTA NYCT_M101",
+                "DirectionRef": "1",
+                "FramedVehicleJourneyRef": {
+                  "DataFrameRef": "2017-01-03",
+                  "DatedVehicleJourneyRef": "MTA NYCT_OH_D6-Weekday-SDon-091300_M101_54"
+                },
+                "JourneyPatternRef": "MTA_M1010346",
+                "PublishedLineName": "M101",
+                "OperatorRef": "MTA NYCT",
+                "OriginRef": "MTA_400448",
+                "DestinationRef": "MTA_903148",
+                "DestinationName": "LTD EAST VILLAGE 6 ST via LEX AV",
+                "OriginAimedDepartureTime": "2017-01-03T15:13:00.000-05:00",
+                "SituationRef": [],
+                "Monitored": true,
+                "VehicleLocation": {
+                  "Longitude": -73.939731,
+                  "Latitude": 40.798341
+                },
+                "Bearing": 53.60417,
+                "ProgressRate": "normalProgress",
+                "ProgressStatus": "prevTrip",
+                "BlockRef": "MTA NYCT_OH_D6-Weekday-SDon_E_OH_27420_M101-65",
+                "VehicleRef": "MTA NYCT_5618",
+                "MonitoredCall": {
+                  "Extensions": {
+                    "Distances": {
+                      "PresentableDistance": "14.4 miles away",
+                      "DistanceFromCall": 23100.11,
+                      "StopsFromCall": 81,
+                      "CallDistanceAlongRoute": 14856.02
+                    }
+                  },
+                  "StopPointRef": "MTA_403821",
+                  "VisitNumber": 1,
+                  "StopPointName": "LEXINGTON AV/E 34 ST"
+                },
+                "OnwardCalls": {}
+              },
+              "RecordedAtTime": "2017-01-03T13:54:23.000-05:00"
+            }
+          ],
+          "ResponseTimestamp": "2017-01-03T13:54:27.574-05:00",
+          "ValidUntil": "2017-01-03T13:55:27.574-05:00"
+        }
+      ],
+      "SituationExchangeDelivery": []
+    }
+  }
+}
