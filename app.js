@@ -147,13 +147,16 @@ bot.dialog("/", [
                         if (arrivalTimesArray.length > 1) {
                             arrivalTimesArray.sort(compareTime);
                         }
-                        var expectedArrivalTime = Date(arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
-                        session.send("Next bus arrives at " + dateFormat(expectedArrivalTime, "h:MM:ss TT"));
+                        if (typeof(arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime) == "undefined") {
+                            session.send('No departures scheduled for a while sorry chief.');
+                        }
+                        var expectedArrivalTime = new Date(arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
+                        session.send("Your next bus arrives at " + dateFormat(expectedArrivalTime, "h:MM TT"));
                     } else if (arrivalTimesArray[0].length == 0) {
-                        session.send('No departures scheduled for the time being sorry.');
+                        session.send('No departures scheduled for a while sorry chief.');
                     }                                                            
                 } else {
-                    session.send('Problem');
+                    session.send('Houston, we have a problem - relaunching.');
                 }
             });            
         }
@@ -219,8 +222,8 @@ function compareDist(a, b) {
 
 function compareTime(a, b) {
     // Return the shortest time
-    var timeFromStopA = Date(a.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
-    var timeFromStopB = Date(b.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
+    var timeFromStopA = new Date(typeof(a.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime) == "undefined" ? 8640000000000000 : a.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
+    var timeFromStopB = new Date(typeof(b.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime) == "undefined" ? 8640000000000000 : b.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
     if (timeFromStopA < timeFromStopB)
         return -1;
     if (timeFromStopA > timeFromStopB)
