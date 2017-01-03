@@ -152,7 +152,7 @@ bot.dialog("/", [
                         }
                         var expectedArrivalTime = new Date((arrivalTimesArray[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime).slice(0, -6));
                         session.send("Your next bus arrives at " + dateFormat(expectedArrivalTime, "UTC:h:MM TT Z").slice(0, -4));
-                    } else if (arrivalTimesArray[0].length == 0) {
+                    } else {
                         session.send('No departures scheduled for a while sorry chief.');
                     }                                                            
                 } else {
