@@ -101,6 +101,7 @@ bot.dialog("/", [
             });
         }
     },
+    // Get routes for the stop
     function (session, results) {
         if (results.response) {
             busStopRoutesArray = busStopInfoArray[results.response].routes;
@@ -122,6 +123,7 @@ bot.dialog("/", [
             builder.Prompts.choice(session, 'Cool. Which route you want?', busStopRoutesArrayChoices);
         }
     },
+    // Get the next bus for that route; when it arrives here
     function (session, results) {
         if (results.response) {
             var counter = 0;
@@ -219,6 +221,10 @@ function compareDist(a, b) {
         return 1;
     return 0;
 }
+
+//=========================================================
+// Compare function for date/time
+//=========================================================
 
 function compareTime(a, b) {
     // Return the shortest time
