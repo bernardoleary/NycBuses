@@ -6,6 +6,7 @@ var builder = require('botbuilder');
 var request = require('request');
 var dateFormat = require('dateformat');
 var locationDialog = require('./node_modules_customised/botbuilder-location');
+//var locationDialog = require('botbuilder-location');
 var spanGeoForSearch = '0.005';
 var boundingBoxForCard = 0.001;
 var maxNumberOfStops = 5;
@@ -14,7 +15,6 @@ var busStopInfoArray;
 var busStopRoutesArray;
 var busStopRoutesArrayChoicesDetail;
 var busInfo;
-//var locationDialog = require('botbuilder-location');
 
 //=========================================================
 // Bot Setup
@@ -60,6 +60,8 @@ bot.dialog("/", [
                 var qod = JSON.parse(body); 
                 session.send(qod.contents.quotes[0].author + " says:");
                 session.send(qod.contents.quotes[0].quote);
+                session.send("...");
+                session.send("BTW, feeback to me is like brains to a zombie - leave it here/anywhere and I will assimilate it ;)");
             });
             session.endDialog();
         }        
@@ -69,7 +71,7 @@ bot.dialog("/", [
         if (results.response) {
             // Get the location
             currentPlace = results.response;
-            // Make sure the bus number makes sense  
+            // Assemble the API request
             var mtaUrl = 
                 process.env.MTA_API_WHERE + 'stops-for-location.json'
                 + '?lat=' + currentPlace.geo.latitude 
@@ -134,7 +136,7 @@ bot.dialog("/", [
                 // Increment the counter
                 counter++;
             }                
-            // Make sure the bus number makes sense  
+            // Assemble the API request
             var mtaUrl = 
                 process.env.MTA_API_SIRI + 'stop-monitoring.json'
                 + "?MonitoringRef=" + busStopRoutesArrayChoicesDetail[counter].monitoringRef
