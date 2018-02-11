@@ -6,6 +6,7 @@ var builder = require('botbuilder');
 var request = require('request');
 var dateFormat = require('dateformat');
 var locationDialog = require('./node_modules_customised/botbuilder-location');
+var azure = require('botbuilder-azure'); 
 //var locationDialog = require('botbuilder-location');
 var spanGeoForSearch = '0.005';
 var boundingBoxForCard = 0.001;
@@ -15,6 +16,12 @@ var busStopInfoArray;
 var busStopRoutesArray;
 var busStopRoutesArrayChoicesDetail;
 var busInfo;
+var documentDbOptions = {
+    host: 'https://nycbuses.documents.azure.com:443/', 
+    masterKey: 'jMMu4kNLdP0xQOnVDkuVMYoE8CNaTAhCUhlSuMK5RWUVHPAfZAX1fAAYHZKR7V8Alb7APdxZU1vA2VYDamrgaQ==', 
+    database: 'botdocs',   
+    collection: 'botdata'
+};
 
 //=========================================================
 // Bot Setup
@@ -31,7 +38,9 @@ var connector = new builder.ChatConnector({
     appId: process.env.MICROSOFT_APP_ID,
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
-var bot = new builder.UniversalBot(connector);
+var docDbClient = new azure.DocumentDbClient(documentDbOptions);
+var cosmosStorage = new azure.AzureBotStorage({ gzipData: false }, docDbClient);
+var bot = new builder.UniversalBot(connector).set('storage', cosmosStorage);;
 server.post('/api/messages', connector.listen());
 
 //=========================================================
